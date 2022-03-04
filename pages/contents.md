@@ -1,31 +1,32 @@
 - 计划
   background-color:: #497d46
 	- ==**目前计划**==
+	  collapsed:: true
 		- 论文
 			- DOING [#A] 戒毒论文情况 {{renderer :todomaster}}
 			  id:: 61d73b36-a35e-45d5-ae8c-c25b50a1c850
+			  collapsed:: true
 				- DONE 缩减一下字数
 				- DONE 修改一下Result
-				- DOING 完成[[戒毒最后部分]]
-			- DOING [#B] 溯源疫情 {{renderer :todomaster}}
-			  id:: 6200118c-be16-45f3-8803-8ff7ff4a85b2
-				- DONE 疫情用Bootstrap得到参数
-				  id:: 61d861bf-05ee-491b-99d2-228f1fee6371
-				  collapsed:: true
-					- DONE 第一张地图
-					- DONE 地图修改中国要合理
-					- DONE 乱搞No
-					- DONE 文档
-				- DONE 添加文献综述
-				- DONE 等待老师意见
-				- DONE 进一步修改
-				- TODO 看老师意见
+				- TODO 完成[[戒毒最后部分]]
+				  id:: 62223573-e350-45b8-b7a3-62167ff6d6fc
 			- TODO [#A] 处理一下能源时间序列 {{renderer :todomaster}}
 			  id:: 62179c59-7dd9-4834-bf8b-3e6b13844801
+			  collapsed:: true
 				- DONE 询问一下老师的情况能否通过他的方式发出
-				- DOING 星期一讨论一下是否要搞
+				- DONE 星期一讨论一下是否要搞
+				- TODO 准备投其他期刊
+				  collapsed:: true
+					- https://epjdatascience.springeropen.com/submission-guidelines
+					- https://www.biomedcentral.com/journals-a-z
+					- http://dx.doi.org/10.1016/j.compchemeng.2021.107513
+					- https://www.sciencedirect.com/journal/iscience/
+			- [#A] LCA论文
+			  id:: 622238e3-ee33-47d0-9818-6b7c83e624c4
+				- 阅读文献
+				- 找好主题
 		- 学习
-collapsed:: true
+		  collapsed:: true
 			- TODO 建立博客
 			- TODO 生存分析大纲计划
 			  id:: 61eae243-cf06-4ea2-98a0-f4575dff53c5
@@ -54,13 +55,9 @@ collapsed:: true
 		- WAITING 元分析学习
 			- WAITING 青少年手机上瘾问题META
 			- WAITING 疫情期间中国抑郁症
-	- 目标🏅️
-	  background-color:: #978626
-		- ((61d73b36-a35e-45d5-ae8c-c25b50a1c850)) 发一个好的期刊
-		- ((6200118c-be16-45f3-8803-8ff7ff4a85b2))发上一个普通的期刊
-		- ((62179c59-7dd9-4834-bf8b-3e6b13844801))能发出去
 	- 已完成✅
 	  background-color:: #793e3e
+	  collapsed:: true
 		- DONE 和教授交流
 		  collapsed:: true
 		  DEADLINE: <2022-02-01 Tue>
@@ -74,6 +71,7 @@ collapsed:: true
 		  id:: 61d747b3-7479-4962-8a89-79b52c2c631c
 		- DONE 准备[[社工实务期末考试大纲]]
 		  id:: f0a4378c-9e3c-40f9-a48c-44e6e40c0328
+		  collapsed:: true
 		  :LOGBOOK:
 		  CLOCK: [2022-01-06 Thu 20:49:59]--[2022-01-06 Thu 20:50:27] =>  00:00:28
 		  CLOCK: [2022-01-06 Thu 20:50:28]--[2022-01-06 Thu 20:51:43] =>  00:01:15
@@ -82,4 +80,22 @@ collapsed:: true
 			- DONE 补充大纲缺失的信息
 		- DONE [[能源论文修改]]
 		  id:: 61d74797-178b-4493-a3c3-6323c4941cb1
-	- [[TIPS]]
+		- DONE [#B] 溯源疫情 {{renderer :todomaster}}
+		  id:: 6200118c-be16-45f3-8803-8ff7ff4a85b2
+		  collapsed:: true
+			- DONE 疫情用Bootstrap得到参数
+			  id:: 61d861bf-05ee-491b-99d2-228f1fee6371
+			  collapsed:: true
+				- DONE 第一张地图
+				- DONE 地图修改中国要合理
+				- DONE 乱搞No
+				- DONE 文档
+			- DONE 添加文献综述
+			- DONE 等待老师意见
+			- DONE 进一步修改
+			- DONE 看老师意见
+			- DONE 提交修改
+	- TIPS
+	  collapsed:: true
+		- 笔记太大即拆分
+			- 大纲不要太夸张
