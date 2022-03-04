@@ -1,0 +1,5 @@
+- 优势
+	- Solow和Smith的方法某一序列极值是否存在特殊性的非参数估计方法，他最先被运用在生态学领域的检测某一物种的重新出现是否为重新引入[@solowHowSurprisingNew2005;@solowRediscoveryScottishPolecat2006]。由于该方法较为简单稳健，因此也被运用如运动科学等领域中，检验运动记录的突破是否值得被质疑[@gembrisEvolutionAthleticRecords2007;@noubaryProcedurePredictionSports2005]。简单来说，该方法的零假设($H_0$)为该序列极值不存在特殊性，备择假设($H_1$)则为该序列极值存在一定特殊性，即存在异常偏离。
+	- 由于存在孤立病例，即进入海关后就被隔离的病例。这些病例并不会造成的大规模传播，因此使用孤立病例作为报告日期可能会使我们的估计有偏。使用Solow和Smith的方法[@solowHowSurprisingNew2005;@solowRediscoveryScottishPolecat2006]能检验第一例报告日期是否为孤立病例给出置信区间的检验p值从而让我们能进一步把握某一病例是否为孤立病例。
+	- Solow和Smith的方法还能修正第一例检测报告的日期。我们对$p <0.05$的报告日期进行修正。以使得报告日期通过Solow和Smith方法的检验($p <0.05$)。从而确保OLE估计更为准确。
+	- 非参数估计方法，它并不依赖特定的分布。估计具有较高的稳健性。

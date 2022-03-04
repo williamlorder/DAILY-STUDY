@@ -1,0 +1,50 @@
+- 计划
+  background-color:: #497d46
+	- **目前计划**
+	  collapsed:: true
+		- LATER 准备[[社工实务期末考试大纲]]
+		  id:: f0a4378c-9e3c-40f9-a48c-44e6e40c0328
+		  collapsed:: true
+		  :LOGBOOK:
+		  CLOCK: [2022-01-06 Thu 20:49:59]--[2022-01-06 Thu 20:50:27] =>  00:00:28
+		  CLOCK: [2022-01-06 Thu 20:50:28]--[2022-01-06 Thu 20:51:43] =>  00:01:15
+		  :END:
+			- DONE 通过语音识别考试内容
+			- NOW 给女朋友写大纲
+		- LATER [[能源论文修改]]
+		  collapsed:: true
+		  :LOGBOOK:
+		  CLOCK: [2022-01-06 Thu 20:48:20]--[2022-01-06 Thu 20:48:20] =>  00:00:00
+		  CLOCK: [2022-01-06 Thu 20:48:22]--[2022-01-06 Thu 20:48:23] =>  00:00:01
+		  CLOCK: [2022-01-06 Thu 20:48:34]--[2022-01-06 Thu 20:48:40] =>  00:00:06
+		  :END:
+		- LATER 修补我的obsidian大纲
+		  id:: 61d7165d-8d14-47e1-88b6-fd4f18352457
+		- LATER 准备 [[机器学习大纲]]的Workshop
+		- LATER [#A] [[戒毒夏普]]
+		  collapsed:: true
+			- {{embed [[戒毒夏普]]}}
+	- 未来计划
+	  collapsed:: true
+		- WAITING 和教授交流
+		  collapsed:: true
+		  id:: 61d735d1-3185-4af7-a5a4-38b45103e85c
+		  :LOGBOOK:
+		  CLOCK: [2022-01-06 Thu 20:49:06]--[2022-01-06 Thu 20:49:07] =>  00:00:01
+		  :END:
+		- WAITING [[王朝首都模拟]]
+		  collapsed:: true
+			- {{embed [[王朝首都模拟]]}}
+		- WAITING [[社会工作文献检索]]
+		- WAITING [[攻击性因果中介]]
+		- WAITING [[心理学机器学习文献检索]]
+		- WAITING 元分析学习
+	- ✅
+	  collapsed:: true
+		-
+- [[事项表格]]
+  background-color:: #533e7d
+- 演讲内容
+  background-color:: #264c9b
+	- [[机器学习大纲]]
+	- [[社工实务期末考试大纲]]

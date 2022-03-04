@@ -1,0 +1,76 @@
+- [#A] 能源论文
+  id:: 61d5e99f-5254-4ca3-924b-667d23e31b74
+  DEADLINE: <2022-01-29 Sat>
+	- 论文写作
+		- **合作部分**
+			- DONE 给老刘它需要修改的东西
+			  :LOGBOOK:
+			  CLOCK: [2022-01-06 Thu 03:05:07]--[2022-01-06 Thu 03:08:40] =>  00:03:33
+			  CLOCK: [2022-01-06 Thu 03:09:02]--[2022-01-06 Thu 03:09:03] =>  00:00:01
+			  CLOCK: [2022-01-06 Thu 03:09:04]--[2022-01-06 Thu 03:09:05] =>  00:00:01
+			  CLOCK: [2022-01-06 Thu 20:52:18]--[2022-01-06 Thu 20:52:19] =>  00:00:01
+			  :END:
+			- DONE 等待老刘修改
+			- DONE 合并
+		- 我的部分
+			- DOING 审稿人1
+				- DONE 请使用MDPI模板准备稿件。
+					- **回复：感谢您的评论，我们已经按照您的建议使用了MDPI模板了。您可以在修改手稿中看到变化**
+				- DONE 从标题来看，我的理解是，作者想建立模型来分析COVID-19期间的能量。然而，所使用的数据是2018年的。请解释一下。
+					- Response: Thank you for question. It is true that the energy data in this paper are from October 2018 to July 2021. The main reason why energy data before the COVID-19 outbreak are covered is based on the following considerations: before the pandemic outbreak from October 2018-December 2019, China's energy production varied only with seasonal changes and showed a regular and stable growth trend overall; after the pandemic outbreak in January 2020, China's energy production showed erratic changes related to the data of infections, deaths and vaccinations. Applying traditional statistics and machine learning methods to fit the COVID-19 data on China's energy production in the above two time periods, the difference between the two fits before the pandemic outbreak both are acceptable. However, after the pandemic outbreak, the fit of machine learning models obviously better than the traditional statistic modesl. In view of the current global COVID-19 situation, it will take quite a long time to completely overcome the epidemic, and the prediction between epidemic data and energy production built by machine learning methods is more accurate and realistic. We have revised the study topic. Is it better?
+				- DONE 应在摘要和引言中明确说明稿件的贡献和创新。
+					- Response: We have revised the Abstract according to your suggestion (see lines 10-25).
+				- DOING 当SVM被引入论文中感兴趣的任务时，为了更好地展示其工程应用，建议加入以下参考文献。https://doi.org/10.1016/j.conbuildmat.2018.06.219
+					- 感谢您的评论，我们已经在
+				- DOING 机器学习模型的性能在很大程度上取决于模型的超参数。在这项研究中，作者是如何设置参数值以达到最佳预测性能的？
+				  id:: 61d73b36-2726-4aec-83b7-751417c36ebe
+					- 感谢您如此宝贵的意见。我们已经在论文中XXX补充了我们超参数调整的方法的细节。由于我们论文中使用了传统的统计学方法和机器学习方法，我们主要有两种调节模型的方法。对于传统的统计方法()，我们使用最大似然估计法进行参数选择，该方法的目标是寻找拥有最低$AIC_c$值的超参数组合[]。对于机器学习模型，我们则主要使用网格搜索法进行超参数的调整[]，该方法的目标是找寻$MAPE$最低的超参数组合。
+					- 模型超参数调整。对于研究中使用的两类算法，我们采取了不同的策略进行参数调整。首先在统计模型中，我们使用了最大似然估计法进行参数调整，目标是寻找$AIC_c$值最低的超参数组合。在机器学习模型中，我们使用网格搜索法进行调参，目标是寻找mape值最低的超参数组合。由于LSTM模型超参数较多 ，网格搜索耗时长且容易过拟合。我们采用了部分网格调参的方法，我们固定了xxx。对XXX进行了参数调整。
+					- 所有的统计模型都使用R语言的fable包进行参数调整。而机器学习模型则使用Python的sklearn包。
+				- DONE 结论部分应包括更多的未来研究。
+					- Response: We have revised the Conclusions according to your suggestion (see lines 1097-1104, in red).
+				- TODO 论文太长了。请尝试缩短篇幅。
+			- DONE 审稿人2
+			  collapsed:: true
+				- 感谢您的回复，我们已经按照其他3位审稿人的意见修改了我们的手稿。您可以在新提交的手稿中看到这些变化
+			- DONE 审稿人3
+			  collapsed:: true
+				- DONE 我只是对使用的数据有一个好奇心。由于可用的数据数量有限，有些方法的误差很高。 数据的月度周期是作者的选择吗？还是作者使用了唯一可用的数据？ 是否有可能让某些参数的值为每周？结果会有什么变化？
+					- 感谢您宝贵的意见，正如我们在结论部分提到的文章存在的不足之处。由于中国大宗能源的宏观数据一直由中国统计局所掌握，然而中国统计局只会以月为单位放出能源产量数据。这使得我们数据量较小，针对这个问题，我们使用了其他能源数据和还有疫情数据作为协变量来提高我们预测的准确性。另外，我们还将疫情前一段时间的数据纳入到训练集中以补充我们的数据集。如果能使用细粒度更加小的数据集（比如以周为单位），我相信预测的误差会大大的降低。然而据我目前所知这种细粒度更低的数据目前在中国，仅有一些城市会进行统计。
+			- LATER 审稿人4
+			  collapsed:: true
+				- DONE 评论1：该稿件的主要强项在于它接近该领域专家非常感兴趣的话题。
+					- 回复：感谢您对于我们论文的积极评价
+				- DONE 备注2：该稿件的主要弱点在于其结构和方法。方法学和建模过程 “*部分缺乏最重要的方面，如关于预测期的细节。如果作者努力改善稿件的结构，并根据具体评论的建议进行补充，那么作者将得到一篇能够为当前知识状况带来有趣见解的文章。
+					- 回复：感谢您对于我们论文的评价，我们已经尽我们最大的可能解决您提出的评论了。
+				- DONE 评论3：行号。作者提交的整个pdf稿件中缺少行号，所以我不得不参考文本的节选和页码，以便准确指出我的评论。
+				  collapsed:: true
+					- **回复：感谢您的回复，我们在新提交的手稿中使用了MDPI杂志的带有行号的模版。您可以在新提交的版本中看到这些变化**
+				- DONE 评论4：手稿的 “摘要”。在手稿的 “摘要”中，作者说。“在本文中，我们建立了传统的统计模型和机器学习模型来预测大流行后的能源生产系列……”从这几句话可以理解，手稿的目标是预测大流行结束后的能源生产。然而，在世界范围内，全球大流行还没有结束，因此输入的数据集并不包含整个大流行时期，而提到大流行后的时期，只要这个时期的时间未知，就没有内容。作者应该更清楚地表达这句话，因为在实际的形式中，它的意思是不清楚的，可以讨论。除此之外，在摘要中，除了已经提出的内容外，作者还应该声明并简要说明其工作的新颖性。
+					- Response: Thank you for suggestion. We have revised the Abstract (see lines 10-25).
+				- TODO 标记5：*方程。**稿件内使用的方程应加以解释、演示或引用，因为有一些方程是作者首次在文献中介绍的，没有被引用（例如方程24、25、26、27）。
+				- TODO 备注6：关于数据集的细节。在“4.数据和数据处理”一节中，作者提供了一系列关于论文中使用的数据集的细节。如果将作者在实验中使用的数据集作为稿件的补充材料提供，将有利于稿件的写作，因为作者应该提供所有必要的细节，以便其他研究人员能够验证、复制、讨论和扩展作者已经发表的结果。其他研究人员不应使用各种方法获得和连接数据集，从而有可能获得不同的数据集或与作者进行实验和分析的数据集不同的规范化数据集。
+					-
+					- [data.csv](../assets/data_1643416393389_0.csv)
+				- TODO **我认为作者必须提供更多关于他们所使用的预处理方法的细节，以及他们打算如何解决与数据集中出现的缺失数据或异常值有关的问题。
+				- TODO **作者能否提及他们的模型在多大程度上受到所用数据的影响，或者当数据集不同时，该模型在多大程度上可以轻易地应用于其他情况？这样一来，作者可以更加突出他们方法的通用能力，以便能够证明对当前技术水平的更大贡献。如果作者在论文的“讨论”部分分析他们开发的方法如何调整，以考虑到其他潜在的异常经济状况，如金融危机、经济崩溃或能源危机，该稿件将受益。
+				- TODO 评论9：神经网络方法。由于作者使用了神经网络方法，我认为他们必须在论文中说明每个网络需要多长时间重新训练/更新一次，以及他们如何解决重新训练/更新所开发的网络的需要。
+				- TODO 评论10：重新训练的过程。**如何将遇到的新数据储存起来，用于网络的后续更新？
+				- TODO 评论11：设计的方法。关于神经网络的方法，作者应该在论文中提供选择数据分割比例的原因。如果作者能提供更多关于在各种测试中获得的结果的细节，对于所有不同的测试比率值，直到所选择的比率被证明是最好的（或合适的）方法，以及在选择这个比率时使用的标准/性能指标是什么，该论文将受益匪浅。
+				- TODO 注12：训练/再训练时间。**如果作者能提供更多关于在各种测试中获得的结果的细节，对于所有不同的层数、神经元和 epochs 的测试，特别是每次测试的训练时间，直到他们获得提供最佳结果的配置，该论文将会受益。这些信息可以总结在一个表格中，如果它变得太长，作者可以在论文中把它限制在十个主要的实验运行，一个包含所有实验运行的完整表格可以插入文章的“补充材料”文件中。
+				- TODO 评论13：训练算法。如果作者能扩展他们的论文，提供更多关于他们在开发人工神经网络方法时使用的训练算法的细节，这将对论文有好处。
+					- ((61d73b36-2726-4aec-83b7-751417c36ebe))
+				- DONE 评论14： 讨论获得的结果 - 手稿中的研究与其他研究之间的比较缺失。我赞赏作者在“讨论”部分引用了一些以前的工作，在这段中。然而，即使作者在这一节中引用了这些论文，这些引用也是为了支持和证明被审稿件中的陈述，而不是为了将作者获得的结果/设计的方法与其他现有的文献进行比较。因此，稿件的这一部分并没有清楚地反映出，从以前解决类似问题的研究角度来看，所获得的方法可以被认为是可行的。为了验证其研究的有用性，作者应该将其开发的方法和稿件中的结果与文献中为相同或相关目的而开发和使用的其他方法进行比较。这种比较是必须的，以突出作者对当前知识状况的明确贡献。作者还应该清楚地强调他们设计的研究与科学文献中的其他研究相比较时的优势和劣势。在 “讨论”部分，作者还应该强调他们的研究目前的局限性。
+					- Response: We have revised the Conclusions according to your suggestion (see lines1008-1034, and lines 1097-1104, in red).
+				- DONE 注15：讨论所获得的结果–洞察力。在讨论了所获得的结果之后，如果作者再进一步，超越他们的方法，提供一个洞察力，说明他们认为根据所获得的结果，所有相关方应该采取什么最重要、最适当和最具体的步骤，以便从稿件中的研究成果中获益，那么这篇论文将受益。
+					- Response: Thank you for suggestion. We added discussions on the insights of this study (see lines1105-1122, in red)
+				- TODO 备注16：软件和详细的硬件配置。如果作者在已经提出的内容之外，还详细说明软件的版本号和用于获得结果的详细硬件配置，将有利于论文的写作。
+					- ((61d73b36-2726-4aec-83b7-751417c36ebe))
+				- DONE 论文的格式。作者应考虑能源MDPI杂志网站上的作者须知和该杂志模板的建议（https://www.mdpi.com/journal/energies/instructions）。在目前的论文形式中，这些建议没有被考虑到。
+				  collapsed:: true
+					- **回复：感谢您的评论，我们已经按照您的建议使用了MDPI模板了。您可以在修改手稿中看到变化**
+				- TODO 参考文献。”参考文献 “部分的论文[8]在稿件中根本没有被引用。请解决这个问题，如果论文中使用了这篇论文，请在手稿中引用它，如果是相反的情况，请删除它。
+		- TODO 评论合并
+	- 表格
+		- {{query (and [[能源论文修改]] (task DOING))}}
+		  query-table:: false

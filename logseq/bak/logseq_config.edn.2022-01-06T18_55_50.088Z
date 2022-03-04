@@ -7,7 +7,7 @@
  ;; Preferred workflow style.
  ;; Value is either ":now" for NOW/LATER style,
  ;; or ":todo" for TODO/DOING style.
- :preferred-workflow :todo
+ :preferred-workflow :now
 
  ;; The app will ignore those directories or files.
  ;; E.g. "/archived" "/test.md"
@@ -90,7 +90,7 @@
  ;;  :editor/down            ["ctrl+j" "down"]
  ;;  :editor/left            ["ctrl+h" "left"]
  ;;  :editor/right           ["ctrl+l" "right"]}
- :shortcuts {:go/search-in-page "meta+f", :go/search "meta+o", :command-palette/toggle "meta+p"}
+ :shortcuts {}
 
  ;; By default, pressing `Enter` in the document mode will create a new line.
  ;; Set this to `true` so that it's the same behaviour as the usual outliner mode.
@@ -168,10 +168,9 @@
  :editor/logical-outdenting? true
  :journal/page-title-format "yyyy年MM月dd日"
  :favorites ["能源论文修改" "事项表格" "contents"]
- :graph/settings {:journal? false, :builtin-pages? true, :orphan-pages? false}
- :ui/show-brackets? false
+ :graph/settings {:journal? true, :builtin-pages? true}
+ :ui/show-brackets? true
  :feature/enable-timetracking? false
- :publishing/all-pages-public? false
 
  ;; any number between 0 and 1 (the greater it is the faster the changes of the next-interval of card reviews) (default 0.5)
  ;; :srs/learning-fraction 0.5
